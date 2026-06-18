@@ -3,138 +3,35 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>صفحه پیدا نشد • ۴۰۴</title>
+    <title>فـانـگـل • صفحه پیدا نشد</title>
     
     <script src="https://cdn.tailwindcss.com"></script>
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;700&display=swap" rel="stylesheet">
     
     <style>
       body {
         font-family: 'Vazirmatn', sans-serif;
-        background-color: #08080c;
+        background-color: #0b0b0f;
       }
-      
       .text-glow {
-        text-shadow: 0 0 20px rgba(226, 10, 62, 0.4);
-      }
-      
-      .glow-border {
-        box-shadow: 0 0 40px rgba(226, 10, 62, 0.15), inset 0 0 20px rgba(226, 10, 62, 0.05);
-      }
-      
-      .glow-btn:hover {
-        box-shadow: 0 0 30px rgba(226, 10, 62, 0.45);
-      }
-      
-      .animated-grid {
-        background-image: 
-          linear-gradient(to right, rgba(226, 10, 62, 0.03) 1px, transparent 1px),
-          linear-gradient(to bottom, rgba(226, 10, 62, 0.03) 1px, transparent 1px);
-        background-size: 40px 40px;
-        animation: gridMove 30s linear infinite;
-      }
-      
-      @keyframes gridMove {
-        0% { background-position: 0 0; }
-        100% { background-position: 40px 40px; }
-      }
-
-      .float-box {
-        animation: floatAnim 5s ease-in-out infinite;
-      }
-      
-      @keyframes floatAnim {
-        0%, 100% { transform: translateY(0px) rotate(0deg); }
-        50% { transform: translateY(-10px) rotate(1deg); }
-      }
-
-      .pulse-bg {
-        animation: pulseBg 6s infinite ease-in-out;
-      }
-      
-      @keyframes pulseBg {
-        0%, 100% { opacity: 0.15; transform: scale(1); filter: blur(80px); }
-        50% { opacity: 0.3; transform: scale(1.1); filter: blur(100px); }
+        text-shadow: 0 0 35px rgba(226, 10, 62, 0.65);
       }
     </style>
   </head>
-  <body class="relative min-h-screen text-white flex flex-col justify-between overflow-x-hidden select-none bg-[#08080c]">
-    
-    <div class="absolute -top-40 -left-40 w-96 h-96 rounded-full bg-[#E20A3E] pulse-bg pointer-events-none"></div>
-    <div class="absolute -bottom-40 -right-40 w-96 h-96 rounded-full bg-[#E20A3E] pulse-bg pointer-events-none" style="animation-delay: -3s;"></div>
-    
-    <div class="absolute inset-0 animated-grid pointer-events-none"></div>
+  <body class="min-h-screen text-white flex flex-col justify-center items-center select-none overflow-hidden m-0">
 
-    <header class="w-full max-w-7xl mx-auto px-6 py-6 flex justify-between items-center z-10 relative">
-      <div class="flex items-center gap-3">
-        <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-[#E20A3E] to-[#ff3b69] flex items-center justify-center shadow-lg shadow-[#E20A3E]/20">
-          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-            <path d="m12 3-1.912 5.886a1 1 0 0 1-.95.688H3l4.9 3.56a1 1 0 0 1 .36 1.11L6.35 20 12 15.9l5.65 4.1-1.91-5.76a1 1 0 0 1 .36-1.11L21 9.57h-6.138a1 1 0 0 1-.95-.688L12 3Z"/>
-          </svg>
-        </div>
-        <div class="flex flex-col text-right">
-          <span class="font-extrabold text-lg tracking-wide bg-gradient-to-l from-white to-neutral-400 bg-clip-text text-transparent">لوگو شما</span>
-          <span class="font-medium text-[10px] text-neutral-400 tracking-wider">یک لندینگ پیج دلخواه</span>
-        </div>
-      </div>
-    </header>
-
-    <main class="w-full flex-grow flex items-center justify-center p-6 z-10">
-      <div class="relative w-full max-w-lg float-box">
-        
-        <div class="relative rounded-3xl p-8 md:p-12 text-center border border-white/5 bg-zinc-950/80 backdrop-blur-2xl flex flex-col items-center glow-border">
-          
-          <div class="absolute top-0 left-0 right-0 h-[2px] bg-gradient-to-r from-transparent via-[#E20A3E] to-transparent"></div>
-          
-          <div class="relative mb-6">
-            <h1 class="text-8xl md:text-9xl font-black tracking-widest text-[#E20A3E] opacity-90 font-mono text-glow">
-              ۴۰۴
-            </h1>
-          </div>
-          
-          <h2 class="text-2xl font-extrabold mb-3 text-white text-glow">
-            صفحه‌ای که دنبالش بودید پیدا نشد!
-          </h2>
-          
-          <p class="text-sm text-neutral-400 mb-8 max-w-sm leading-relaxed">
-            آدرس وارد شده نادرست است یا این صفحه دیگر وجود ندارد. می‌توانید به صفحه قبلی بازگردید یا به صفحه اصلی بروید.
-          </p>
-
-          <div class="w-full h-px bg-zinc-900 mb-8"></div>
-
-          <div class="flex flex-col sm:flex-row gap-4 w-full justify-center">
-            
-            <a 
-              href="/"
-              class="glow-btn w-full sm:w-auto inline-flex items-center justify-center gap-2 px-8 py-3.5 bg-gradient-to-r from-[#E20A3E] to-[#b3082f] text-white rounded-2xl font-bold transition-all duration-300 transform active:scale-95 shadow-lg shadow-[#E20A3E]/20"
-            >
-              <span>بازگشت به خانه</span>
-            </a>
-
-            <button 
-              onclick="window.history.back()"
-              class="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-8 py-3.5 bg-zinc-900 border border-zinc-800 hover:border-zinc-700 text-zinc-300 hover:text-white rounded-2xl font-bold transition-all duration-300 transform active:scale-95"
-            >
-              <span>بازگشت به صفحه قبل</span>
-            </button>
-            
-          </div>
-
-        </div>
-      </div>
-    </main>
-
-    <footer class="w-full text-center py-6 text-xs text-neutral-600 z-10 relative">
-      <p class="select-none dir-ltr font-mono">
-        &copy; <span id="year">2026</span> Your System. All rights reserved.
+    <div class="text-center">
+      <h1 class="text-8xl md:text-9xl font-black tracking-wider text-[#E20A3E] text-glow font-mono leading-none">
+        404
+      </h1>
+      
+      <p class="text-sm font-medium text-neutral-500 tracking-wide mt-4">
+        صفحه پیدا نشد
       </p>
-    </footer>
+    </div>
 
-    <script>
-      document.getElementById('year').textContent = new Date().getFullYear();
-    </script>
   </body>
 </html>
