@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" type="image/png" href="https://raw.githubusercontent.com/arbbon/cdn/main/FUNGAL%20-%20Transparent%20Main%20Logo.png" />
-    <title>صفحه پیدا نشد • فـانـگـل</title>
+    <title>فـانـگـل • صفحه پیدا نشد</title>
     
     <script src="https://cdn.tailwindcss.com"></script>
     
@@ -22,12 +22,11 @@
       .text-glow {
         text-shadow: 0 0 15px rgba(226, 10, 62, 0.6);
       }
-      .text-glow-gold {
-        text-shadow: 0 0 15px rgba(245, 158, 11, 0.6);
-      }
+      
       .glow-box-red {
         box-shadow: 0 0 35px rgba(226, 10, 62, 0.25);
       }
+      
       .glow-btn:hover {
         box-shadow: 0 0 25px rgba(226, 10, 62, 0.5);
       }
@@ -48,6 +47,7 @@
       .float-animation {
         animation: float 6s ease-in-out infinite;
       }
+      
       @keyframes float {
         0% { transform: translateY(0px); }
         50% { transform: translateY(-15px); }
@@ -57,6 +57,7 @@
       .slow-pulse {
         animation: slow-pulse 8s infinite ease-in-out;
       }
+      
       @keyframes slow-pulse {
         0%, 100% { opacity: 0.2; transform: scale(1); filter: blur(90px); }
         50% { opacity: 0.45; transform: scale(1.15); filter: blur(110px); }
@@ -70,6 +71,7 @@
         background-color: rgba(226, 10, 62, 0.6);
         animation: rise 5s infinite ease-in-out;
       }
+      
       @keyframes rise {
         0% { transform: translateY(100px) scale(0); opacity: 0; }
         50% { opacity: 0.8; }
@@ -93,30 +95,17 @@
     </div>
 
     <header class="w-full max-w-7xl mx-auto px-6 py-6 flex justify-between items-center z-10 relative">
-      <a href="/" class="flex items-center gap-3 group">
+      <div class="flex items-center gap-3">
         <img 
           src="https://raw.githubusercontent.com/arbbon/cdn/main/FUNGAL%20-%20Transparent%20Main%20Logo.png" 
-          alt="لوگوی فانگل" 
-          class="w-12 h-12 object-contain transition-transform duration-300 group-hover:rotate-12"
+          alt="لوگو" 
+          class="w-12 h-12 object-contain"
         />
         <div class="flex flex-col text-right">
           <span class="font-black text-xl tracking-wide bg-gradient-to-l from-white via-neutral-100 to-neutral-400 bg-clip-text text-transparent">فـانـگـل</span>
           <span class="font-medium text-[10px] text-neutral-400 tracking-wider">سرویس گیمینگ ماینکرفت</span>
         </div>
-      </a>
-      
-      <button 
-        id="copy-ip-header"
-        onclick="copyServerIp()"
-        class="hidden md:flex items-center gap-2 px-3.5 py-1.5 rounded-xl bg-zinc-900/60 hover:bg-zinc-800/80 border border-zinc-800 hover:border-[#E20A3E]/30 transition-all text-xs font-mono text-zinc-400 hover:text-white"
-        title="کپی کردن آدرس سرور"
-      >
-        <span>mc.fngl.ir</span>
-        <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-[#E20A3E]">
-          <rect width="14" height="14" x="8" y="8" rx="2" ry="2"/>
-          <path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"/>
-        </svg>
-      </button>
+      </div>
     </header>
 
     <main class="w-full flex-grow flex items-center justify-center p-6 z-10">
@@ -134,48 +123,22 @@
           </div>
           
           <h2 class="text-xl md:text-2xl font-extrabold mb-3 text-white text-glow">
-            آدرس فرعی اشتباهه، رفیق!
+            مسیر رو اشتباه اومدی، رفیق!
           </h2>
           
           <p class="text-sm text-neutral-400 mb-8 max-w-sm leading-relaxed">
-            به نظر می‌رسه که مسیرت رو در دالان‌های تاریک فانگل گم کردی. صفحه‌ای که دنبالش بودی، یا برداشته شده یا کلاً وجود نداشته!
+            به نظر می‌رسه صفحه‌ای که دنبالش بودی تغییر کرده یا کلاً وجود نداره. می‌تونی از دکمه زیر برای بازگشت به صفحه اصلی استفاده کنی.
           </p>
 
           <div class="w-2/3 h-px bg-zinc-800 mb-8"></div>
 
           <div class="flex flex-col sm:flex-row gap-4 w-full justify-center">
-            
             <a 
               href="/"
-              class="glow-btn inline-flex items-center justify-center gap-2 px-6 py-3.5 bg-gradient-to-r from-[#E20A3E] to-[#b3082f] text-white rounded-2xl font-bold transition-all duration-300 transform active:scale-95 group shadow-lg shadow-[#E20A3E]/20"
+              class="glow-btn w-full sm:w-auto inline-flex items-center justify-center gap-2 px-8 py-3.5 bg-gradient-to-r from-[#E20A3E] to-[#b3082f] text-white rounded-2xl font-bold transition-all duration-300 transform active:scale-95 shadow-lg shadow-[#E20A3E]/20"
             >
-              <span>بازگشت به خانه</span>
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="transition-transform duration-300 group-hover:translate-x-1">
-                <path d="m15 18-6-6 6-6"/>
-              </svg>
+              <span>بازگشت به صفحه اصلی</span>
             </a>
-
-            <button 
-              onclick="copyServerIp()"
-              class="inline-flex items-center justify-center gap-2 px-6 py-3.5 bg-zinc-900 border border-zinc-800 hover:border-zinc-700 text-zinc-300 hover:text-white rounded-2xl font-bold transition-all duration-300"
-            >
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <rect width="14" height="14" x="8" y="8" rx="2" ry="2"/>
-                <path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"/>
-              </svg>
-              <span>کپی آی‌پی سرور</span>
-            </button>
-            
-          </div>
-
-          <div 
-            id="toast"
-            class="mt-6 text-emerald-450 text-xs font-semibold select-none flex items-center gap-1.5 opacity-0 transition-opacity duration-300"
-          >
-            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-emerald-500">
-              <path d="M20 6 9 17l-5-5"/>
-            </svg>
-            <span class="text-emerald-500">آدرس سرور (mc.fngl.ir) با موفقیت کپی شد!</span>
           </div>
 
         </div>
@@ -190,22 +153,6 @@
 
     <script>
       document.getElementById('current-year').textContent = new Date().getFullYear();
-
-      function copyServerIp() {
-        const ipText = "mc.fngl.ir";
-        navigator.clipboard.writeText(ipText).then(() => {
-          const toast = document.getElementById('toast');
-          toast.classList.remove('opacity-0');
-          toast.classList.add('opacity-100');
-          
-          setTimeout(() => {
-            toast.classList.remove('opacity-100');
-            toast.classList.add('opacity-0');
-          }, 4000);
-        }).catch(err => {
-          console.error(err);
-        });
-      }
     </script>
   </body>
 </html>
